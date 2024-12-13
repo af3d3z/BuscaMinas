@@ -1,0 +1,20 @@
+ENT:
+	class Casilla:
+		- imagen
+		- esMina
+		- esVolteada
+
+BL:
+	class GestorBL:
+		+ getCasillas(int fase) -> List<Casilla>
+		+ getBombasMaximas(int fase) -> int
+		+ getTiradasMaximas(int fase) -> int
+
+UI:
+	VM:
+		- int fase
+		- List<Casilla> tablero
+		- Casilla casillaSeleccionada
+		- int aciertos
+		- int fallos
+		-int jugadas
